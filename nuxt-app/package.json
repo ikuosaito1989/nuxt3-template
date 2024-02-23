@@ -16,7 +16,9 @@
   },
   "module": "index.ts",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@types/bun": "latest",
+    "eslint": "^8.56.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
