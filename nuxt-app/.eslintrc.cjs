@@ -13,13 +13,8 @@ module.exports = {
   plugins: ['prettier'],
   // add your custom rules here
   rules: {
-    'import/order': [
-      'error',
-      {
-        alphabetize: {
-          order: 'asc',
-        },
-      },
-    ],
+    'no-undef': 'off',
+    'no-var': 'error',
+    'prefer-const': 'error',
   },
 }
