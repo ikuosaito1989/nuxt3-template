@@ -16,5 +16,6 @@ module.exports = {
     'no-undef': 'off',
     'no-var': 'error',
     'prefer-const': 'error',
+    'vue/multi-word-component-names': 'off',
   },
 }
