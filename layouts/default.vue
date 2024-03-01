@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <img src="/img/nuxt.png" alt="Discover Nuxt 3" />
+  <v-app>
+    <div>
+      <v-img :width="176" contain src="/img/nuxt.png"></v-img>
+    </div>
     <slot />
     footer
-  </div>
+  </v-app>
 </template>
