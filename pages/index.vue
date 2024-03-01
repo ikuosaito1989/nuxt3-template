@@ -1,10 +1,11 @@
 <script setup lang="ts">
-const count = ref(5)
+// const count = ref(5)
 </script>
 
 <template>
-  <AppAlert> This is an auto-imported component </AppAlert>
-  <div>count: {{ count }}</div>
+  <section>
+    <p>Main Content.</p>
+  </section>
 </template>
 
 <style lang="scss" scoped>

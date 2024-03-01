@@ -1,9 +1,13 @@
 <template>
   <v-app>
-    <div>
-      <v-img :width="176" contain src="/img/nuxt.png"></v-img>
-    </div>
-    <slot />
-    footer
+    <v-layout class="rounded rounded-md">
+      <Header></Header>
+      <v-layout fill-height class="rounded rounded-md h-screen">
+        <v-main class="d-flex align-center justify-center">
+          <slot />
+        </v-main>
+      </v-layout>
+    </v-layout>
+    <Footer></Footer>
   </v-app>
 </template>
