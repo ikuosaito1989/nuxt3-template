@@ -1,5 +1,6 @@
 <script setup lang="ts">
 // const count = ref(5)
+const { data: count } = await useFetch('https://zipcloud.ibsnet.co.jp/api/search')
 </script>
 
 <template>

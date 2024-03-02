@@ -10,7 +10,13 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     'prettier',
   ],
-  plugins: ['prettier'],
+  plugins: ['@typescript-eslint'],
+  // ref. https://eslint.vuejs.org/user-guide/#how-to-use-a-custom-parser
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module',
+  },
   // add your custom rules here
   rules: {
     'no-undef': 'off',
@@ -18,5 +24,6 @@ module.exports = {
     'prefer-const': 'error',
     'vue/multi-word-component-names': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/no-explicit-any': 'error',
   },
 }
