@@ -4,7 +4,9 @@
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
     </template>
 
-    <v-app-bar-title>Application Bar</v-app-bar-title>
+    <NuxtLink to="/">
+      <v-app-bar-title>Application Bar</v-app-bar-title>
+    </NuxtLink>
 
     <template #append>
       <v-btn icon="mdi-heart"></v-btn>
