@@ -1,5 +1,7 @@
+<script setup lang="ts">
+const color = useColor() // Same as useState('color')
+</script>
+
 <template>
-  <section>
-    <p>This page will be displayed at the /about route.</p>
-  </section>
+  <p>Current color: {{ color }}</p>
 </template>
