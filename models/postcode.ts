@@ -1,4 +1,4 @@
-export interface Postcode {
+export interface PostCode {
   postcode_type: string
   jis: string
   old: string

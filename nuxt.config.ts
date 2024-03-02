@@ -12,7 +12,6 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }))
       })
     },
-    //...
   ],
   devtools: { enabled: true },
   vite: {
@@ -28,5 +27,8 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  imports: {
+    dirs: ['models/*'],
   },
 })
