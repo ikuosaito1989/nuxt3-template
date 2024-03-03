@@ -9,7 +9,14 @@ export default defineNuxtConfig({
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
         // @ts-expect-error
-        config.plugins.push(vuetify({ autoImport: true }))
+        config.plugins.push(
+          vuetify({
+            autoImport: true,
+            styles: {
+              configFile: 'styles/settings.scss',
+            },
+          }),
+        )
       })
     },
   ],
@@ -30,5 +37,9 @@ export default defineNuxtConfig({
   },
   imports: {
     dirs: ['models/*'],
+  },
+  sourcemap: {
+    server: false,
+    client: false,
   },
 })
