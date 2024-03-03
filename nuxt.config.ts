@@ -38,8 +38,4 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['models/*'],
   },
-  sourcemap: {
-    server: false,
-    client: false,
-  },
 })
