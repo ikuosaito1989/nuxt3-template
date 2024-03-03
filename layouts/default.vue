@@ -1,13 +1,7 @@
 <template>
-  <v-app>
-    <v-layout class="rounded rounded-md">
-      <Header></Header>
-      <v-layout fill-height class="rounded rounded-md h-screen">
-        <v-main class="d-flex align-center justify-center">
-          <slot />
-        </v-main>
-      </v-layout>
-    </v-layout>
+  <div>
+    <Header></Header>
+    <slot />
     <Footer></Footer>
-  </v-app>
+  </div>
 </template>
