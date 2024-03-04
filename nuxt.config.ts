@@ -25,13 +25,6 @@ export default defineNuxtConfig({
         transformAssetUrls,
       },
     },
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@use "~/assets/css/_colors.scss" as *;',
-        },
-      },
-    },
   },
   imports: {
     dirs: ['models/*'],

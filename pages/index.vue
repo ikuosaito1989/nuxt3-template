@@ -29,15 +29,7 @@ const address = computed(() => {
   <section>
     <div>住所：{{ address }}</div>
     <v-text-field v-model="zipcode" :rules="rules" label="Zip Code"></v-text-field>
-    <v-btn prepend-icon="$vuetify" @click="fetch">検索</v-btn>
-    <v-btn prepend-icon="$vuetify" @click="refresh()">初期化 </v-btn>
+    <v-btn color="primary" prepend-icon="$vuetify" @click="fetch">検索</v-btn>
+    <v-btn color="secondary" prepend-icon="$vuetify" @click="refresh()">初期化 </v-btn>
   </section>
 </template>
-
-<style lang="scss" scoped>
-.index {
-  .index__header {
-    color: $primary;
-  }
-}
-</style>
