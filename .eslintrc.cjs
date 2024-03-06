@@ -9,8 +9,9 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
     'prettier',
+    'plugin:tailwindcss/recommended',
   ],
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'tailwindcss'],
   // ref. https://eslint.vuejs.org/user-guide/#how-to-use-a-custom-parser
   parser: 'vue-eslint-parser',
   parserOptions: {

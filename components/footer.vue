@@ -1,13 +1,9 @@
 <template>
-  <v-footer class="bg-indigo-lighten-1 text-center d-flex flex-column">
-    <div class="pt-0">The nuxt3 template.</div>
-
+  <div class="tw-bg-slate-100">
+    <div>2024 — Vuetify, LLC</div>
     <ul>
+      <li><NuxtLink to="/">Top</NuxtLink></li>
       <li><NuxtLink to="/about">About</NuxtLink></li>
     </ul>
-
-    <v-divider></v-divider>
-
-    <div>{{ new Date().getFullYear() }} — <strong>Vuetify</strong></div>
-  </v-footer>
+  </div>
 </template>

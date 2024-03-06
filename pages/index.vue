@@ -26,7 +26,7 @@ const address = computed(() => {
 </script>
 
 <template>
-  <section>
+  <section class="tw-w-full tw-max-w-3xl">
     <div>住所：{{ address }}</div>
     <v-text-field v-model="zipcode" :rules="rules" label="Zip Code"></v-text-field>
     <v-btn color="primary" prepend-icon="$vuetify" @click="fetch">検索</v-btn>

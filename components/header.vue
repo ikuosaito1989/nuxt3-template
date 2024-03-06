@@ -5,7 +5,7 @@
     </template>
 
     <NuxtLink to="/">
-      <v-app-bar-title>Application Bar</v-app-bar-title>
+      <v-app-bar-title>Application</v-app-bar-title>
     </NuxtLink>
 
     <template #append>

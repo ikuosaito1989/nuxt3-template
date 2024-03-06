@@ -1,13 +1,10 @@
 <template>
   <v-app class="tw-font-mono">
-    <v-layout class="rounded rounded-md">
-      <Header></Header>
-      <v-layout fill-height class="rounded rounded-md h-screen">
-        <v-main class="d-flex align-center justify-center">
-          <slot />
-        </v-main>
-      </v-layout>
-    </v-layout>
+    <Header></Header>
+    <div class="tw-flex tw-h-svh tw-items-center tw-justify-center tw-pt-16">
+      <slot />
+    </div>
+
     <Footer></Footer>
   </v-app>
 </template>
