@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const zipcode = ref('')
+var zipcode = ref('')
 const rules = ref([
   (value: string) => {
     if (!value.length) {
@@ -9,7 +9,8 @@ const rules = ref([
   },
 ])
 
-const { data: postcode, refresh } = await useFetch<PostCode>(
+const { 
+  data: postcode, refresh } = await useFetch<PostCode>(
   'https://postcode.teraren.com/postcodes/1000011.json',
 )
 
