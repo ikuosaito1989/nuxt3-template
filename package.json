@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "nuxt3-template",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,7 +10,8 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint:fix": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore --fix .",
-    "prettier": "prettier --write --list-different ."
+    "prettier": "prettier . --check",
+    "prettier:fix": "prettier --write --list-different ."
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
