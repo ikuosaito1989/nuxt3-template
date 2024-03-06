@@ -18,7 +18,11 @@ export default defineNuxtConfig({
       })
     },
     'nuxt-simple-sitemap',
+    'nuxt-gtag',
   ],
+  gtag: {
+    id: 'G-XXXXXXXXXX',
+  },
   sitemap: {
     urls: [
       {
