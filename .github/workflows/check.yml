@@ -1,6 +1,7 @@
 name: Check if Nuxt apps are mergeable
 
 on:
+  workflow_dispatch:
   pull_request:
     branches: [main]
 
