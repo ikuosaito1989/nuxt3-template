@@ -9,7 +9,7 @@ const rules = ref([
   },
 ])
 
-const { data: postcode, refresh } = await useFetch<PostCode>(
+const { data: postcode, refresh } = await useFetchi<PostCode>(
   'https://postcode.teraren.com/postcodes/1000011.json',
 )
 
@@ -20,7 +20,7 @@ const fetch = async () => {
 }
 
 const address = computed(() => {
-  const v = postcode.value!
+  const v = postcode.value
   return v.prefecture + v.city + v.suburb
 })
 </script>
