@@ -20,6 +20,14 @@ export default defineNuxtConfig({
     'nuxt-simple-sitemap',
     'nuxt-gtag',
   ],
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.BASE_URL,
+    },
+  },
+  routeRules: {
+    '/api/**': { proxy: 'https://postcode.teraren.com/**' },
+  },
   gtag: {
     id: process.env.GTAG,
   },
