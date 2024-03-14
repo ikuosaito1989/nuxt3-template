@@ -4,7 +4,7 @@
 
 This is the minimum template to get started with Nuxt3
 
-<img width="200" alt="image" src="https://github.com/ikuosaito1989/nuxt3-template/assets/48668579/e7a21d0e-0dec-4f64-af8b-b3b274f93a53">
+<img width="200" alt="image" src="https://github.com/ikuosaito1989/nuxt3-template/assets/48668579/b4564df0-6b31-4baf-a033-476da6af6811">
 
 ## Features    
 

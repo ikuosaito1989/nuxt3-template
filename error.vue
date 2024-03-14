@@ -20,7 +20,7 @@ const handleError = () => clearError({ redirect: '/' })
 </script>
 
 <template>
-  <div>
+  <div class="tw-flex tw-h-svh tw-flex-col tw-items-center tw-justify-center">
     <component :is="errorPage" />
     <v-btn color="primary" prepend-icon="$vuetify" @click="handleError">トップ</v-btn>
   </div>
