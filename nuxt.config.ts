@@ -54,6 +54,12 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['models/*'],
   },
+  components: [
+    {
+      path: '~/components', // will get any components nested in let's say /components/test too
+      pathPrefix: true,
+    },
+  ],
   tailwindcss: {
     // Options
   },
