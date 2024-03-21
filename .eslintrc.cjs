@@ -23,6 +23,7 @@ module.exports = {
     'no-undef': 'off',
     'no-var': 'error',
     'prefer-const': 'error',
+    'no-console': 'warn',
     'vue/multi-word-component-names': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-explicit-any': 'error',
