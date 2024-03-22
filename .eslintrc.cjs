@@ -22,9 +22,16 @@ module.exports = {
   rules: {
     'no-undef': 'off',
     'no-var': 'error',
-    'prefer-const': 'error',
     'no-console': 'warn',
+    'prefer-const': 'error',
     'vue/multi-word-component-names': 'off',
+    'vue/component-tags-order': [
+      'error',
+      {
+        order: ['script', 'template', 'style'],
+      },
+    ],
+    'vue/define-macros-order': ['error'],
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-explicit-any': 'error',
   },
