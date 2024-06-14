@@ -24,6 +24,18 @@ module.exports = {
     'no-var': 'error',
     'no-console': 'warn',
     'prefer-const': 'error',
+    'require-jsdoc': [
+      'error',
+      {
+        require: {
+          FunctionDeclaration: true,
+          MethodDefinition: true,
+          ClassDeclaration: true,
+          ArrowFunctionExpression: true,
+          FunctionExpression: true,
+        },
+      },
+    ],
     'vue/multi-word-component-names': 'off',
     'vue/component-tags-order': [
       'error',
@@ -34,5 +46,8 @@ module.exports = {
     'vue/define-macros-order': ['error'],
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-explicit-any': 'error',
+    'prefer-template': 'error',
+    'arrow-body-style': ['error', 'as-needed'],
+    'max-lines': ['error', 250],
   },
 }
